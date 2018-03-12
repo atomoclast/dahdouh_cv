@@ -1,0 +1,188 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Robotics}\\\textbf{Engineering},
+        \textbf{~~~Computer~~~}\\\textbf{~~~Vision~~~},
+        \textbf{~~~~~~~~~ROS~~~~~~~~},
+        \textbf{Mechatronics},
+        \textbf{Artificial}\\\textbf{Intelligence},
+        \textbf{~~~~Software~~~~}\\\textbf{~~~Dev~~~}
+    }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$ C++  $\textbullet$ ROS / 3.5},{Embedded Systems $\textbullet$ Mechatronics / 3}, {$\textbullet$ Python / 4}}
+
+% Projects text
+\projects{
+\textbf{Autonomous Rover} - A differential wheeled mobile robot capable of path planning, state estimation, and navigation through static environments. \\
+        \textbf{CS6475} - A seam-carving for content aware image resizing implimentation in C++. \\
+        \textbf{CS7637} - A AI agent capable of solving 3x3 Raven's Progressive Matrices.\\ 
+        \textbf{Team Cerebro} - A anthropamorphic Robot Arm with a Brain-Machine Interface for control.
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{ANDREW \\\ DAHDOUH} % Your name
+\cvjobtitle{ Robotics Engineer } % Job
+% title/career
+
+\cvlinkedin{/in/andrewdahdouh}
+\cvgithub{atomoclast}
+\cvnumberphone{(832) 725 9347} % Phone number
+\cvsite{realitybytes.blog} % Personal website
+\cvmail{andrew.dahdouh@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+	{Nov 2017 -}
+	{Present}
+	{Robotics System Engineer}
+	{\href{http://verbsurgical.com/}{Verb Surgical}}
+	{}
+	{\begin{itemize}
+			\item Verb Surgical is building a digital surgery platform that combines robotics, advanced visualization, advanced instrumentation, data analytics, and connectivity. 
+			Current job duties include hardware, software, and system development and testing of a seven degree of freedom end-effector as well as system level software testing and integration. 
+		\end{itemize}}
+		\\
+		\twentyitem
+		{Dec 2015 -}
+		{Nov 2017}
+		{Robotics Engineer}
+		{\href{https://houstonmechatronics.com/}{Houston Mechatronics, Inc}}
+		{}
+		{
+			{\begin{itemize}
+					\item Advanced robotics system research, development, and implementation. Experience in a highly dynamic research and development environment on advanced intelligent, dexterous and autonomous robotic systems. Job tasks and duties include: Computer Vision and Machine Learning, Supervised autonomy, Motion planning, Tele-perception, Robotic Simulation, and Dexterous Control. 
+					\item Usage of protocols such as EtherCAT and ØMQ to interface high level control and lower-level hardware/software abstractions. 
+					\item Development in Python and C++ with utilization of the ROS framework in a highly dynamic Agile/Scrum development team.
+				\end{itemize}}
+			}
+			\\   
+			\twentyitem
+			{Oct 2014 -}
+			{Aug 2015}
+			{System Developer}
+			{\href{http://optimation.us/}{Optimation Technology, Inc}}
+			{}
+			{
+				{\begin{itemize}
+						\item Job tasks include identifying system requirements, developing technical design documentation, software development, and installation of software and hardware based solutions. Projects required architecture of small to medium sized automation solutions for the fields of Petrochemical Engineering, Medical Devices (ISO 13485 experience), Renewable Energy, and Aerospace Engineering.
+					\end{itemize}}
+				}
+				\\
+				\twentyitem
+				{June 2014 -}
+				{Oct 2014}
+				{Embedded Software Engineer (Contract)}
+				{\href{https://www.advancedpharmacy.com/}{Advanced Pharmacy}}
+				{}
+				{
+					\begin{itemize}
+						\item Development, testing, and maintenance of Kernel and RTOS code for mechatronic pharmaceutical dispensers.
+						\item Development and implementation of software in Embedded C. 
+						
+					\end{itemize}
+				}
+				
+				%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+				\\
+				\twentyitem
+				{Aug 2013 -}
+				{June 2014}
+				{Embedded Software Engineer (Contract)}
+				{\href{https://www.bakerhughes.com/}{Baker Hughes}}
+				{}
+				{
+					\begin{itemize}
+						\item Embedded software engineering experience for hydraulic fracturing and coil tubing industrial equipment. 
+					\end{itemize}
+				}
+				%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+				\\
+				\twentyitem
+				{Jan 2013 -}
+				{Aug 2013}
+				{Design Engineer}
+				{\href{https://www.oceaneering.com/intervention-tooling/}{Oceaneering DTS}}
+				{}
+				{
+					\begin{itemize}
+						\item Engineering position in a fast paced, high risk environment providing solutions and tooling for ROV systems in deepwater situations in subsea engineering.
+					\end{itemize}
+				}
+				
+				
+				%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+			\end{twenty}
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2018 - 2020}
+        {}
+        {MSc., Computer Science \textnormal{Perception, Robotics and AI}}
+        {\href{http://www.omscs.gatech.edu/}{Georgia Institue of Technology, Online}}
+        {}
+        {}
+    \twentyitem
+    {2016 - 2017}
+    {}
+    {Robotics Specialization \textnormal{Coursera}}
+    {\href{https://www.coursera.org/specializations/robotics}{University of Pennsylvania}}
+    {}
+    {}
+	\twentyitem
+    	{2008 - 2012}
+		{}
+        {BSc., Mechanical, Computer Engineering Technology}
+        {\href{http://www.uh.edu/}{University of Houston}}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Publications}
+A. Dahdouh, M. A. Moges, L. Pollonini, “An integrated ear-mounted sensor for pulse oximetry and EKG measurments,” in 2012 IEEE Health Innovations Conference, IEEE, 2012. 
+\end{document} 
